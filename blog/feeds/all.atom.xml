@@ -58,13 +58,16 @@ brython(1);
 &lt;!-- 以下實際利用  Brython 畫兩條直線 --&gt;
 
 &lt;canvas id="guitarchord" width="600" height="200"&gt;&lt;/canvas&gt;
+&lt;canvas id="guitarchord2" width="600" height="200"&gt;&lt;/canvas&gt;
 
 &lt;script type="text/python3"&gt;
 from browser import document as doc
 import math
 
 canvas = doc["guitarchord"]
+canvas2= doc["guitarchord2"]
 ctx = canvas.getContext("2d")
+ctx2 = canvas2.getContext("2d")
 ctx.beginPath()
 ctx.lineWidth = 1
 inc = 5
